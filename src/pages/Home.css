@@ -1,0 +1,189 @@
+.hero {
+  background: linear-gradient(180deg, var(--denim) 0%, var(--denim-deep) 100%);
+  color: var(--cream);
+  padding: 72px 0 60px;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.hero h1 {
+  color: var(--cream);
+  font-size: clamp(2.4rem, 4.5vw, 3.4rem);
+  margin-top: 0.3em;
+}
+
+.hero-lead {
+  font-size: 1.08rem;
+  color: rgba(253, 246, 233, 0.82);
+  max-width: 46ch;
+  margin-top: 18px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.hero-trust {
+  display: flex;
+  gap: 32px;
+  margin-top: 46px;
+  padding-top: 26px;
+  border-top: 1px solid rgba(253, 246, 233, 0.18);
+}
+
+.hero-trust div {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-trust strong {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--marigold);
+}
+
+.hero-trust span {
+  font-size: 0.78rem;
+  color: rgba(253, 246, 233, 0.65);
+}
+
+.hero-board { justify-self: end; width: 100%; max-width: 380px; }
+
+/* Promise strip */
+.promise-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+}
+
+.promise-num {
+  font-family: var(--font-mono);
+  color: var(--rust);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.promise-item h3 { font-size: 1.15rem; margin-top: 10px; }
+.promise-item p { color: var(--ink-soft); font-size: 0.95rem; }
+
+/* Section head */
+.section-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.section-head h2 { margin-top: 0.15em; }
+
+.section-head-link {
+  font-weight: 700;
+  color: var(--rust);
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+/* Rooms grid */
+.rooms-preview { background: var(--paper); }
+
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+/* Amenities */
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.amenity-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 22px 22px 20px;
+}
+
+.amenity-card h3 { font-size: 1.08rem; margin-bottom: 0.35em; }
+.amenity-card p { font-size: 0.9rem; color: var(--ink-soft); margin: 0; }
+
+/* Testimonials */
+.testimonials { background: var(--paper); }
+
+.testimonial-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.testimonial-card {
+  margin: 0;
+  background: var(--cream);
+  border-radius: 12px;
+  padding: 24px 22px;
+  border-left: 4px solid var(--marigold);
+}
+
+.testimonial-card p {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.02rem;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+
+.testimonial-card cite {
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
+  color: var(--ink-soft);
+  font-style: normal;
+}
+
+/* CTA banner */
+.cta-banner {
+  background: var(--marigold);
+}
+
+.cta-banner-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 48px 24px;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.cta-banner h2 { color: var(--denim-deep); margin-bottom: 0.2em; }
+.cta-banner p { color: var(--denim-deep); opacity: 0.85; margin: 0; }
+.cta-banner .btn-primary {
+  background: var(--denim-deep);
+  color: var(--cream);
+  box-shadow: 0 4px 0 var(--denim);
+}
+
+@media (max-width: 980px) {
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-board { justify-self: start; max-width: 420px; }
+  .rooms-grid { grid-template-columns: repeat(2, 1fr); }
+  .amenities-grid { grid-template-columns: repeat(2, 1fr); }
+  .testimonial-row { grid-template-columns: 1fr; }
+  .promise-grid { grid-template-columns: 1fr; gap: 26px; }
+}
+
+@media (max-width: 560px) {
+  .rooms-grid { grid-template-columns: 1fr; }
+  .amenities-grid { grid-template-columns: 1fr; }
+  .hero-trust { gap: 22px; flex-wrap: wrap; }
+}

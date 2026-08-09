@@ -1,0 +1,107 @@
+.about-hero {
+  background: var(--paper);
+  padding: 64px 0 48px;
+  border-bottom: 1px solid var(--line);
+}
+
+.about-hero h1 {
+  font-size: clamp(2rem, 4vw, 2.7rem);
+  max-width: 20ch;
+  margin-top: 0.25em;
+}
+
+.about-hero p {
+  max-width: 60ch;
+  color: var(--ink-soft);
+  font-size: 1.02rem;
+}
+
+.about-story { background: var(--paper); }
+
+.about-story-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.about-story-text p { color: var(--ink-soft); }
+.about-story-text em { color: var(--rust); font-style: italic; }
+
+.about-story-facts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.fact-block {
+  background: var(--cream);
+  border-radius: 12px;
+  padding: 22px 18px;
+  border-left: 4px solid var(--kalamansi);
+}
+
+.fact-block strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  color: var(--denim-deep);
+}
+
+.fact-block span {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
+
+.values-section { background: var(--cream); }
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.value-card {
+  background: var(--paper);
+  border-radius: 12px;
+  padding: 24px 22px;
+  border: 1px solid var(--line);
+}
+
+.value-card h3 { font-size: 1.1rem; margin-bottom: 0.35em; }
+.value-card p { color: var(--ink-soft); font-size: 0.93rem; margin: 0; }
+
+.neighborhood-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.neighborhood p { color: var(--ink-soft); }
+
+.neighborhood-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: var(--denim-deep);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.neighborhood-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 22px;
+  color: var(--cream);
+  font-size: 0.95rem;
+}
+
+.neighborhood-list li:nth-child(odd) { background: rgba(253, 246, 233, 0.05); }
+.neighborhood-list li span { color: var(--marigold); font-family: var(--font-mono); font-size: 0.85rem; }
+
+@media (max-width: 900px) {
+  .about-story-grid { grid-template-columns: 1fr; }
+  .neighborhood-grid { grid-template-columns: 1fr; }
+  .values-grid { grid-template-columns: 1fr; }
+}
