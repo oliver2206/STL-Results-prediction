@@ -81,6 +81,18 @@ const myNumbers = [
     { number: '5-6', month: 'October' },
     { number: '7-11', month: 'October' },
     { number: '10-04', month: 'October' },
+
+     { number: '15-36', month: 'November' },
+    { number: '19-22', month: 'November' },
+    { number: '6-11', month: 'November' },
+    { number: '8-20', month: 'November' },
+    { number: '2-19', month: 'November' },
+    { number: '16-20', month: 'November' },
+    { number: '9-17', month: 'November' },
+    { number: '9-13', month: 'November' },
+    { number: '9-27', month: 'November' },
+    { number: '9-29', month: 'November' },
+    { number: '11-17', month: 'November' },
 ]
 
 export default myNumbers
