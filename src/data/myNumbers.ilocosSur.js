@@ -30,9 +30,15 @@ const myNumbers = [
     { number: '31-38', month: 'January' },
     { number: '09-37', month: 'January' },
     { number: '04-37', month: 'January' },
-
-
+     { number: '09-28', month: 'January' },
+    
+     { number: '08-02', month: 'February' },
+     { number: '08-02', month: 'February' },
+     { number: '08-02', month: 'February' },
+     { number: '08-02', month: 'February' },
+     { number: '08-02', month: 'February' },
     { number: '08-02', month: 'February' },
+    
     { number: '11-7', month: 'July' },
     { number: '08-33', month: 'July' },
     { number: '09-33', month: 'July' },
@@ -62,7 +68,19 @@ const myNumbers = [
      { number: '38-08', month: 'September' },
      { number: '19-05', month: 'September' },
      { number: '01-11', month: 'September' },
-
+       { number: '09-28', month: 'September' },
+    
+   { number: '22-36', month: 'October' },
+    { number: '14-20', month: 'October' },
+    { number: '2-5', month: 'October' },
+    { number: '2-9', month: 'October' },
+    { number: '23-35', month: 'October' },
+    { number: '38-33', month: 'October' },
+    { number: '30-35', month: 'October' },
+    { number: '5-15', month: 'October' },
+    { number: '5-6', month: 'October' },
+    { number: '7-11', month: 'October' },
+    { number: '10-04', month: 'October' },
 ]
 
 export default myNumbers
