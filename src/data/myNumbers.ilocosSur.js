@@ -56,7 +56,12 @@ const myNumbers = [
     { number: '09-11', month: 'August' },
 
     { number: '02-14', month: 'September' },
-    { number: '09-11', month: 'September' },
+    { number: '05-12', month: 'September' },
+    { number: '04-07', month: 'September' },
+    { number: '19-05', month: 'September' },
+     { number: '38-08', month: 'September' },
+     { number: '19-05', month: 'September' },
+     { number: '01-11', month: 'September' },
 
 ]
 
