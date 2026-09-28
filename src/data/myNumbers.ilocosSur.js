@@ -53,7 +53,7 @@ const myNumbers = [
     { number: '20-36', month: 'February' },
      { number: '14-19', month: 'February' },
      { number: '2-16', month: 'February' },
-    { number: '30-30', month: 'February' },
+   
 
     { number: '10-25', month: 'March' },
      { number: '12-37', month: 'March' },
