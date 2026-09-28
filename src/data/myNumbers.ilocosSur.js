@@ -26,7 +26,7 @@ const myNumbers = [
     { number: '15-28', month: 'January' },
     { number: '17-33', month: 'January' },
     { number: '03-31', month: 'January' },
-    { number: '03-3e', month: 'January' },
+    { number: '03-31', month: 'January' },
     { number: '31-38', month: 'January' },
     { number: '09-37', month: 'January' },
     { number: '04-37', month: 'January' },
