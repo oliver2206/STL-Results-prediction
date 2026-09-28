@@ -32,12 +32,12 @@ const myNumbers = [
     { number: '04-37', month: 'January' },
      { number: '09-28', month: 'January' },
     
+     { number: '31-36', month: 'February' },
+     { number: '9-24', month: 'February' },
+     { number: '10-33', month: 'February' },
+     { number: '11-24', month: 'February' },
      { number: '08-02', month: 'February' },
-     { number: '08-02', month: 'February' },
-     { number: '08-02', month: 'February' },
-     { number: '08-02', month: 'February' },
-     { number: '08-02', month: 'February' },
-    { number: '08-02', month: 'February' },
+    { number: '12-29', month: 'February' },
 
     { number: '10-25', month: 'March' },
      { number: '12-37', month: 'March' },
