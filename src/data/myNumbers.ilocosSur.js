@@ -38,6 +38,24 @@ const myNumbers = [
      { number: '08-02', month: 'February' },
      { number: '08-02', month: 'February' },
     { number: '08-02', month: 'February' },
+
+
+      { number: '15-19', month: 'June' },
+    { number: '10-25', month: 'June' },
+    { number: '13-30', month: 'June' },
+      { number: '7-11', month: 'June' },
+    { number: '9-34', month: 'June' },
+    { number: '9-36', month: 'June' },
+      { number: '16-24', month: 'June' },
+    { number: '1-8', month: 'June' },
+    { number: '10-22', month: 'June' },
+      { number: '2-29', month: 'June' },
+    { number: '7-14', month: 'June' },
+    { number: '9-24', month: 'June' },
+      { number: '19-29', month: 'June' },
+   
+
+
     
     { number: '11-7', month: 'July' },
     { number: '08-33', month: 'July' },
