@@ -1758,9 +1758,9 @@ const drawResults = {
         label: "November 2018",
         enabled: true,
         days: [
-            { date: "2018-11-01", morning: "", afternoon: "", evening: "" },
-            { date: "2018-11-02", morning: "", afternoon: "", evening: "" },
-            { date: "2018-11-03", morning: "", afternoon: "", evening: "" },
+            { date: "2018-11-01", morning: "35*19", afternoon: "36*30", evening: "28*2" },
+            { date: "2018-11-02", morning: "6x22", afternoon: "34*38", evening: "6*30" },
+            { date: "2018-11-03", morning: "1*4", afternoon: "20*37", evening: "24*16" },
             { date: "2018-11-04", morning: "", afternoon: "", evening: "" },
             { date: "2018-11-05", morning: "", afternoon: "", evening: "" },
             { date: "2018-11-06", morning: "", afternoon: "", evening: "" },
