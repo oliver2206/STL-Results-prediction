@@ -5304,9 +5304,9 @@ const drawResults = {
             { date: "2026-09-25", morning: "06-19", afternoon: "11-08", evening: "24-17" },
             { date: "2026-09-26", morning: "19-05", afternoon: "05-21", evening: "11-03" },
             { date: "2026-09-27", morning: "02-18", afternoon: "03-19", evening: "01-18" },
-            { date: "2026-09-28", morning: "09-22", afternoon: "", evening: "" },
-            { date: "2026-09-29", morning: "", afternoon: "", evening: "" },
-            { date: "2026-09-30", morning: "", afternoon: "", evening: "" },
+            { date: "2026-09-28", morning: "09-22", afternoon: "17-26", evening: "12-25" },
+            { date: "2026-09-29", morning: "30-23", afternoon: "37-34", evening: "13-37" },
+            { date: "2026-09-30", morning: "01-30", afternoon: "", evening: "" },
         ],
     },
 
