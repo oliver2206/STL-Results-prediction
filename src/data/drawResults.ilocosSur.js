@@ -5305,7 +5305,7 @@ const drawResults = {
             { date: "2026-09-27", morning: "02-18", afternoon: "03-19", evening: "01-18" },
             { date: "2026-09-28", morning: "09-22", afternoon: "17-26", evening: "12-25" },
             { date: "2026-09-29", morning: "30-23", afternoon: "37-34", evening: "13-37" },
-            { date: "2026-09-30", morning: "01-30", afternoon: "", evening: "" },
+            { date: "2026-09-30", morning: "01-30", afternoon: "30-17", evening: "12-17" },
         ],
     },
 
@@ -5313,8 +5313,8 @@ const drawResults = {
         label: "October 2026",
         enabled: true,
         days: [
-            { date: "2026-10-01", morning: "", afternoon: "", evening: "" },
-            { date: "2026-10-02", morning: "", afternoon: "", evening: "" },
+            { date: "2026-10-01", morning: "31-19", afternoon: "34-35", evening: "30-34" },
+            { date: "2026-10-02", morning: "32-34", afternoon: "24-11", evening: "07-34" },
             { date: "2026-10-03", morning: "", afternoon: "", evening: "" },
             { date: "2026-10-04", morning: "", afternoon: "", evening: "" },
             { date: "2026-10-05", morning: "", afternoon: "", evening: "" },
