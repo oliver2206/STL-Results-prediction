@@ -13,7 +13,7 @@
 // so the tab is full — replace the names and numbers with the real ones.
 
 const profiles = [
-    { name: 'Niel', numbers: ['35-30', '08-02', '7-11'] },
+    { name: 'Niel', numbers: ['35-30', '08-02', '7-11' '14-21',] },
     { name: 'Emma', numbers: ['14-20', '13-31', '07-11', '04-10', '02-09', '02-20', '10-10'] },
     { name: 'Tina', numbers: ['06-31 ', '25-25', '04-14', '26-29', '09-26', '10-16', '08-08'] },
     { name: 'Blesie', numbers: ['09-23', '09-28', '19-28', '10-02', '07-11', ] },
