@@ -1,0 +1,84 @@
+/* ---------- Gallery tab ---------- */
+.gal-form {
+  background: var(--paper); color: var(--ink); border-radius: 12px; padding: 14px;
+  display: flex; flex-direction: column; gap: 12px; margin-bottom: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+.gal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.gal-balls { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.gal-field { display: flex; flex-direction: column; gap: 4px; font-family: var(--mono); font-size: 11px; color: var(--ink-soft); min-width: 0; }
+.gal-field input, .gal-field select {
+  font-family: var(--body); font-size: 14px; color: var(--ink); min-width: 0;
+  background: #fffaf0; border: 1px solid var(--paper-line); border-radius: 6px; padding: 8px;
+}
+.gal-balls .gal-field input { text-align: center; font-family: var(--mono); font-weight: 700; font-size: 16px; }
+.gal-save {
+  background: var(--gold); color: var(--board-green-deep); border: 0; border-radius: 8px;
+  padding: 11px; font-weight: 700; font-size: 15px; cursor: pointer;
+}
+.gal-error { margin: 0; font-size: 13px; color: #a63a2b; }
+
+.gal-filter { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; color: var(--paper); font-size: 13px; }
+.gal-filter select { font-size: 14px; padding: 6px 8px; border-radius: 6px; border: 1px solid var(--paper-line); background: var(--paper); color: var(--ink); }
+.gal-count { margin-left: auto; font-family: var(--mono); font-size: 12px; opacity: 0.7; }
+
+.gal-month { margin-bottom: 18px; }
+.gal-month-title { margin: 0 0 8px; font-family: var(--display); font-size: 20px; color: var(--gold); }
+.gal-day { margin-bottom: 14px; }
+.gal-day-title { margin: 0 0 6px; font-family: var(--display); font-size: 15px; color: var(--paper); }
+
+.gal-card {
+  background: var(--paper); color: var(--ink); border-radius: 10px; padding: 10px 12px;
+  margin-bottom: 8px; display: flex; flex-direction: column; gap: 8px;
+}
+.gal-card-head { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.gal-draw { font-family: var(--mono); font-size: 11px; background: var(--paper-line); border-radius: 6px; padding: 3px 7px; }
+.gal-ball-row { display: inline-flex; gap: 6px; flex-wrap: wrap; }
+.gal-ball {
+  display: inline-flex; align-items: center; gap: 5px; font-family: var(--mono); font-weight: 700; font-size: 14px;
+  color: var(--board-green-deep); background: var(--gold); border-radius: 999px; padding: 3px 11px;
+}
+.gal-ball small { font-size: 10px; font-weight: 600; opacity: 0.75; text-transform: uppercase; }
+.gal-ball.is-empty { background: var(--paper-line); color: var(--ink-soft); }
+.gal-note { margin: 0; font-size: 14px; }
+.gal-card-foot { display: flex; justify-content: flex-end; gap: 6px; }
+.gal-del { background: transparent; border: 0; font-size: 12px; color: var(--ink-soft); cursor: pointer; padding: 2px 6px; }
+.gal-del.is-confirm { color: #fff; background: #a63a2b; border-radius: 6px; }
+
+/* ---------- Passcode lock bar ---------- */
+.gal-lock {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap;
+  border-radius: 10px; padding: 9px 12px; margin-bottom: 14px; font-size: 13px; font-weight: 600;
+}
+.gal-lock.is-on { background: rgba(255, 255, 255, 0.1); color: var(--paper); }
+.gal-lock.is-off { background: #a63a2b; color: #fff; }
+.gal-lock-btn {
+  border: 0; border-radius: 8px; padding: 6px 12px; font-size: 12px; font-weight: 700; cursor: pointer;
+  background: var(--gold); color: var(--board-green-deep);
+}
+.gal-flash { margin: -6px 0 12px; font-size: 13px; color: var(--gold); }
+
+/* ---------- Passcode dialog (above the photo viewer, z-index 50) ---------- */
+.pc-backdrop {
+  position: fixed; inset: 0; z-index: 100; background: rgba(0, 0, 0, 0.7);
+  display: flex; align-items: center; justify-content: center; padding: 16px;
+}
+.pc-box {
+  width: 100%; max-width: 340px; background: var(--paper); color: var(--ink); border-radius: 14px;
+  padding: 18px; display: flex; flex-direction: column; gap: 12px; box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+}
+.pc-title { margin: 0; font-family: var(--display); font-size: 18px; }
+.pc-msg { margin: 0; font-size: 14px; line-height: 1.4; }
+.pc-field { display: flex; flex-direction: column; gap: 4px; font-family: var(--mono); font-size: 11px; color: var(--ink-soft); }
+.pc-field input {
+  font-family: var(--mono); font-size: 18px; letter-spacing: 0.15em; text-align: center; color: var(--ink);
+  background: #fffaf0; border: 1px solid var(--paper-line); border-radius: 8px; padding: 10px;
+}
+.pc-field input:focus { outline: 2px solid var(--gold); outline-offset: 1px; }
+.pc-error { margin: 0; font-size: 13px; color: #a63a2b; font-weight: 600; }
+.pc-warn { margin: 0; font-size: 12px; color: var(--ink-soft); }
+.pc-actions { display: flex; gap: 8px; justify-content: flex-end; }
+.pc-btn { border: 0; border-radius: 8px; padding: 10px 16px; font-weight: 700; font-size: 14px; cursor: pointer; background: #e7e0cf; color: var(--ink); }
+.pc-btn.is-main { background: var(--gold); color: var(--board-green-deep); }
+.pc-btn.is-main.is-danger { background: #a63a2b; color: #fff; }
+.pc-btn:disabled { opacity: 0.55; cursor: not-allowed; }
