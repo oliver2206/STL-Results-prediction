@@ -33,7 +33,7 @@ const profiles = [
     { name: 'Tems', numbers: ['15-36', '04-28', '04-36', '20-02', '20-20', '13-36', '08-15', '14-20', ''] },
     { name: 'Nano', numbers: ['', '', ''] },
     { name: 'Floring', numbers: ['11-30', '30-30', '29-29'] },
-    { name: 'Idda', numbers: ['07-23', '10-22', '17-20'] },
+    { name: 'Idda', numbers: ['07-23', '10-22', ''] },
     { name: 'Person 19', numbers: ['05-28', '35-12', '23-31'] },
     { name: 'Person 20', numbers: ['16-38', '24-01', '11-33'] },
 ]
