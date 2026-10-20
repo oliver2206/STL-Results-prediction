@@ -1324,7 +1324,7 @@ const drawResults = {
             { date: "2024-11-14", morning: "", afternoon: "", evening: "" },
             { date: "2024-11-15", morning: "11-30", afternoon: "14-07", evening: "06-37" },
             { date: "2024-11-16", morning: "05-34", afternoon: "21-38", evening: "29-08" },
-            { date: "2024-11-17", morning: "13-04", afternoon: "10-37,  evening: "" },
+            { date: "2024-11-17", morning: "13-04", afternoon: "10-37",  evening: "21-32" },
             { date: "2024-11-18", morning: "15-11", afternoon: "33-18", evening: "17-19" },
             { date: "2024-11-19", morning: "34-09", afternoon: "34-10", evening: "33-01" },
             { date: "2024-11-20", morning: "29-27", afternoon: "15-17", evening: "14-36" },
