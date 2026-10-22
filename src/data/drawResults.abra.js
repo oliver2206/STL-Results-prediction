@@ -1971,8 +1971,8 @@ const drawResults = {
             { date: "2026-04-26", morning: "", afternoon: "", evening: "" },
             { date: "2026-04-27", morning: "", afternoon: "", evening: "" },
             { date: "2026-04-28", morning: "", afternoon: "", evening: "" },
-            { date: "2026-04-29", morning: "", afternoon: "", evening: "" },
-            { date: "2026-04-30", morning: "", afternoon: "", evening: "" },
+            { date: "2026-04-29", morning: "13-16", afternoon: "08-19", evening: "08-29" },
+            { date: "2026-04-30", morning: "06-32", afternoon: "11-12", evening: "20-14" },
         ],
     },
 
