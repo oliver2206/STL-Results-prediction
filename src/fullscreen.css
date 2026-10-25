@@ -1,0 +1,58 @@
+/* Full-screen layout overrides. Loaded last so it wins over App.css. */
+html, body, #root { min-height: 100dvh; width: 100%; }
+
+.page {
+  max-width: none;
+  width: 100%;
+  min-height: 100dvh;
+  margin: 0;
+  padding: clamp(12px, 1.8vw, 28px) clamp(12px, 2.5vw, 40px) clamp(20px, 3vw, 40px);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header becomes a slim top bar instead of a tall centered block */
+.masthead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px 20px;
+  text-align: left;
+  margin-bottom: 14px;
+}
+.masthead-eyebrow { width: 100%; margin: 0; }
+.masthead-title { font-size: clamp(26px, 3.2vw, 38px); margin: 0; }
+.masthead-sub { flex: 1 1 280px; margin: 0; }
+.masthead .manage-months-btn { margin: 0; }
+
+/* Controls span the width */
+.province-toggle { margin: 0 0 12px; max-width: none; justify-content: flex-start; }
+.mode-toggle { max-width: none; justify-content: flex-start; margin: 0 0 14px; }
+.search-bar { max-width: 720px; margin: 0 0 12px; }
+
+/* The results board fills the rest of the screen */
+.board {
+  flex: 1 1 auto;
+  width: 100%;
+  border-radius: 14px;
+  padding: clamp(14px, 2vw, 32px);
+  min-height: 60dvh;
+}
+.board::before { left: clamp(14px, 2vw, 32px); right: clamp(14px, 2vw, 32px); }
+
+/* Use the extra width: more columns instead of one long list */
+.ticket-list:not(.compact) {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 380px), 1fr));
+  gap: 12px;
+}
+.ticket-list.compact { grid-template-columns: 1fr; }
+.profiles-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 14px; }
+.month-grid { grid-template-columns: repeat(auto-fit, minmax(84px, 1fr)); }
+.compare-columns { grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
+.month-tabs { flex-wrap: wrap; overflow-x: visible; }
+
+@media (max-width: 560px) {
+  .masthead-sub { display: none; }
+  .month-tabs { flex-wrap: nowrap; overflow-x: auto; }
+}
